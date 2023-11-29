@@ -1,0 +1,333 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: wheat;
+    width: 100%;
+    height: 100vh;
+    display: flex;justify-content: center;
+    align-items: center;
+   
+}
+
+.phone{
+    position: relative;
+    width: 400px;
+    height: 730px;
+    background-image: url("mt-pic.jpg") ;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 5px solid #222;
+    border-radius: 40px;
+    box-shadow: 0 0 1rem #222;
+
+}
+
+.phone .notify{
+    position: absolute;
+    top: 7px;
+    left: 27%;
+    width: 180px;
+    height: 45px;
+    background-color: black;
+    border-radius:50px  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 2px 2px 1rem; */
+
+}
+
+.notify .speker{
+    width: 40px;
+    height: 15px;
+    background-color: rgba(66, 55, 55, 0.842);
+    border-radius: 50px;
+}
+.notify .cam{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(66, 55, 55, 0.842);
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+
+
+#phone-off{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 35px;
+    z-index: 100;
+    display: block;
+    cursor: pointer;
+}
+
+
+#power-btn1{
+    position: absolute;
+    top: 150px;
+    right: -10px;
+    border-radius: 50px;
+    width: 10px;
+    height: 70px;
+    background-color: black;
+    cursor: pointer;
+}
+#power-btn2{
+    position: absolute;
+    top: 150px;
+    right: -10px;
+    border-radius: 50px;
+    width: 10px;
+    height: 70px;
+    background-color: black;
+    display: none;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    width: 200px;
+    border-radius: 50px;
+    height: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.inner-info{
+    width: 100%;
+    height: 655px;
+    position: absolute;
+    top: 10%;
+    color: white;
+    
+}
+
+.inner-info p,h1{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.inner-info h1{
+    font-size: 80px;
+    margin-top: -20px;
+}
+
+.lock-icon-box{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.time{
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    font-size: 18px;
+    background-color: rgb(3, 158, 3);
+    width: 60px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 50px;
+}
+
+.inter-img{
+    position: absolute;
+    top: 13px;
+    /* background-color: red; */
+    width: 110px;
+    right: 5px;
+}
+
+.lock-icon-box h3{
+    font-weight: bolder;
+    font-family: sans-serif;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lock-icon-box img{
+    width: 40px;
+    height: 40px;
+    background-color: #494040;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.lock-icon-box .cam-icon{
+    background-color: #201515;
+
+}
+
+#unlock{
+    background-color: rgba(0, 0, 0, 0.904);
+    position:absolute ;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 35px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.pass{
+    padding-top: 20px;
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+
+}
+
+.zero-btn{
+    background-color: #554c4caf;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+/* #display{
+} */
+
+.pass .btn-row button{
+    background-color: #554c4caf;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+#unlock p{
+    margin-top: 40%;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+
+#menu-page{
+    position:absolute ;
+    top: 8%;
+    background-color: transparent;
+    width: 90%;
+    height: 600px;
+    padding: 20px;
+    display: none;
+}
+
+.img-box{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-box .img1,.img2{
+    width: 45%;
+    height: 100%;
+    border-radius: 15px;
+    padding-left: 10px;
+    box-shadow: 2px 2px .5rem;
+
+}
+
+.img-box .img1{
+    background: linear-gradient(rgb(8, 8, 80),rgb(155, 147, 147));
+}
+
+.img-box .img2{
+    background: url("Ajarat.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-box .img2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.img1 p{
+    font-weight: bolder;
+    color: white;
+    font-size: 18px;
+}
+.img1 h1{
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+    text-align: start;
+    margin-top: -15px;
+}
+
+.img1 .cloud{
+    font-size: 15px;
+}
+
+.menu-icon-box{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.menu-icon-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.menu-icon-row .img-menu{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    text-shadow: 2px 2px 1rem;
+    cursor: pointer;
+
+}
+.messages{
+    border-radius: 15px;
+}
+
+#down-icon-box{
+    background-color: rgba(161, 161, 151, 0.952);
+    border-radius: 15px;
+    position: absolute;
+    width: 90%;
+    bottom: -5px;
+    box-shadow: 2px 2px 1rem;
+}
